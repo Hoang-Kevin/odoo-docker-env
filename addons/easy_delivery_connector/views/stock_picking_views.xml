@@ -1,0 +1,17 @@
+<odoo>
+        <record id="view_picking_form_inherit_easy_delivery_connector" model="ir.ui.view">
+        <field name="name">stock.picking.form.inherit.easy.delivery.connector</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+            <field name="show_easy_delivery_button" invisible="1"/>
+            <button name="generate_shipping_label_easy_delivery"
+                    string="generate easy delivery label"
+                    type="object"
+                    invisible="show_easy_delivery_button == False"
+                    />
+        </xpath>
+        </field>
+    </record>
+</odoo>
