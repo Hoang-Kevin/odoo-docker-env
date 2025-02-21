@@ -12,6 +12,6 @@
     'data': [
         'data/data.xml',
         'data/ir_config_parameter.xml',
-        'views/stock_picking_views.xml.xml',
+        'views/stock_picking_views.xml',
     ],
 }
